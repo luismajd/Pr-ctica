@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(255, 246, 206);
+}
+h1{
+    color:rgb(194, 13, 13);
+    text-align: center;
+}in
+p{
+    font-size: 18px;
+}
+.subtitle{
+    background-color: rgb(235, 228, 197);
+    font-weight: bolder;
+} 
+div{
+    width: 300px;
+    border: 25px solid brown;
+    padding: 25px;
+    margin: 25px;
+}
+table{
+    border: 2px solid black;
+    font-size: 22px;
+    background-color: white;
+    text-align: center;
+}
+th{
+    background-color: rgb(214, 189, 74);
+    border: 2px solid black;
+}
+td{
+    border: 2px solid black;
+}
+a{
+    color: rgb(133, 75, 8);
+}
+img{
+    border-radius: 5%;
+}

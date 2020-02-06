@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf8">
+        <!-- Información para el navegador -->
+        <title>Formulario</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+
+    <body>
+
+        <h1>Formulario: Ingrese sus datos</h1>
+
+        <hr><br>
+
+        <center>
+            <div>
+                <form action="procesa.php" method="POST">
+
+                    <label for="name" hidden>Nombre:</label>
+                    <input type="text" name="name" placeholder="Nombre" required><br>
+                    <label for="email" hidden>Correo:</label>
+                    <input type="email" name="email" placeholder="Correo" required><br>
+                    <label for="password" hidden>Contraseña:</label>
+                    <input type="password" name="password" placeholder="Contraseña" required><br><br>
+
+                    <label for="carrera">Carrera:</label>
+                    <select name="carrera">
+                        <option value="inni">INNI</option>
+                        <option value="ince">INCE</option>
+                        <option value="inco">INCO</option>
+                        <option value="inbi">INBI</option>
+                    </select><br><br>
+
+                    <label for="genero">Género:</label><br>
+                    <input type="radio" name="genero" value="masculino" checked>Masculino<br>
+                    <input type="radio" name="genero" value="femenino">Femenino<br><br>
+
+                    <label for="promedio">Promedio:</label>
+                    <input type="number" name="promedio" min="60" max="100" required><br><br>
+
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" name="fecha" required><br><br>
+
+                    <label for="comentario" hidden>Comentario:</label>
+                    <textarea placeholder="Comentario" name="comentario" rows="10" cols="40"></textarea><br>
+
+                    <label for="boletin">Recibir boletín</label>
+                    <input type="checkbox" name="boletin" value="1" checked><br><br>
+
+                    <button type="submit">Enviar</button><br><br>
+
+                </form>
+
+                <a href="index.html">Volver a inicio</a>
+            </div>   
+        </center>
+
+    </body>
+
+</html>

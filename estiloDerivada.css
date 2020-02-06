@@ -1,0 +1,86 @@
+body{
+    background-color: rgba(144, 190, 192, 0.815);
+}
+h1{
+    color: rgba(16, 19, 29, 0.705);
+    font-size: xx-large;
+    font-style: italic;
+    text-align: center;
+}
+h2{
+    font-size: small;
+    color: rgba(16, 19, 29, 0.705);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+}
+h3{
+    font-size: 20px;
+    color: rgba(3, 5, 8, 0.705);
+    text-decoration: underline;
+}
+hr.thick{
+    border: 2px solid rgba(5, 5, 27, 0.603);
+}
+#text{
+    font-size: 18px;
+}
+#note{
+    border: 2px solid rgb(5, 5, 27);
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+#formula{
+    color: rgb(59, 21, 21);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+img.primary{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: black;
+}
+img.secondary{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-style: solid;
+    border-color: black;
+    float: right;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: rgb(131, 0, 92);
+}
+a:hover{
+    color: rgba(219, 18, 159, 0.973);
+}
+a:active{
+    color: rgba(69, 0, 180, 0.973);
+}
+ul{
+    list-style-type: square;
+}
+table{
+    border: 2px solid black;
+    font-size: 22px;
+    background-color: white;
+    text-align: center;
+    float: left;
+}
+th{
+    background-color: rgb(200, 248, 156);
+    border: 2px solid black;
+}
+td{
+    border: 2px solid black;
+}

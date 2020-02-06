@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf8">
+        <title>Derivada de orden 'n'</title>
+        <link rel="stylesheet" type="text/css" href="estiloDerivada.css">
+    </head>
+
+    <body>
+        <h1>Definición general para derivada de orden 'n'.</h1>
+        <hr class = "thick">
+        <h2>Por Luis Manuel Juárez</h2>
+        <h3>Derivada de primer orden</h3>
+        <p id="text">
+            La derivada de primer orden de una función es la pendiente
+            de la línea tangente (línea que intersecta en un único punto de
+            dicha función). Es por esto que para encontrar la derivada,
+            deben tomarse dos puntos de la función tal que la distancia entre
+            ellos sea casi nula. Debido a esto, la derivada se define como un
+            límite en el que la diferencia de x tiende a cero.
+        </p>
+        <img src="Derivada1.PNG" width="400px" height="80px" class="primary">
+        <h3>Derivada de segundo orden</h3>
+        <p id="text">
+            Al definir la segunda derivada, nos encontramos con varios
+            patrones. Los más notorios son, por un lado, el decremento gradual
+            de 'dx' en el numerador. Por otro lado encontramos un incremento
+            en el exponente de 'dx' en el denominador.
+        </p>
+        <img src="Derivada2.PNG" width="400px" height="80px" class="primary">
+        <p id="text">
+            Y por último, encontramos fuertemente un patrón del
+            <a href="https://es.wikipedia.org/wiki/Tri%C3%A1ngulo_de_Pascal">
+            triángulo de Pascal</a> en el numerador.<br>
+            Estos tres patrones nos permiten establecer una definición general
+            para cualquier derivada de orden 'n'.
+        </p>
+        <img src="triangulo_pascal.png" width="250" height="250" class="secondary">
+        <h3>Derivada orden 'n'</h3>
+        <p id="text">
+            Como puede observarse en la imagen del triángulo de Pascal, se encuentra
+            el patrón del numerador en las dos definiciones anteriores (nivel 1 y 2
+            -donde el nivel de la cima es 0-). Por ejemplo, en el nivel dos se encuentran:
+            1, 2 y 1, justo como en la definición de la segunda derivada.
+            Así, tenemos que la definición general para cualquier derivada de orden 'n', es
+            la siguiente:
+        </p>
+        <br>
+        <img src="DerivadaN.PNG" width="400px" height="80px" class="primary">
+        <br>
+        <p id="note">
+            <strong>Nota:</strong><br>
+            Para encontrar los valores correspondientes para cualquier nivel del triángulo
+            de Pascal, debe de hacerse uso de <strong>combinatorias</strong>.
+        </p>
+        <p id="text">
+            <strong>Notación:</strong><br>
+            <ul>
+                <li>f '(x): derivada de la función</li>
+                <li>Dx: Diferencia de x</li>
+                <li>n: orden</li>
+                <li>k: iterador</li>
+                <li>b: bias (parcialidad)</li>
+                <li>%: residuo</li>
+            </ul> 
+        </p>
+        <h3>Ejemplo:</h3>
+        <p id="formula">f(x) = 5x^3</p>
+        <table align="center">
+            <tr>
+                <th>x</th><th>f(x)</th><th>f '(x)</th><th>f ''(x)</th>
+            </tr>
+            <tr>
+                <td>-5</td><td>-625</td><td>375</td><td>-150</td>
+            </tr>
+            <tr>
+                <td>-4</td><td>-320</td><td>240</td><td>-120</td>
+            </tr>
+            <tr>
+                <td>-3</td><td>-135</td><td>135</td><td>-90</td>
+            </tr>
+            <tr>
+                <td>-2</td><td>-40</td><td>60</td><td>-60</td>
+            </tr>
+            <tr>
+                <td>-1</td><td>-5</td><td>15</td><td>-30</td>
+            </tr>
+            <tr>
+                <td>0</td><td>0</td><td>0</td><td>0</td>
+            </tr>
+            <tr>
+                <td>1</td><td>5</td><td>15</td><td>30</td>
+            </tr>
+            <tr>
+                <td>2</td><td>40</td><td>60</td><td>60</td>
+            </tr>
+            <tr>
+                <td>3</td><td>135</td><td>135</td><td>90</td>
+            </tr>
+            <tr>
+                <td>4</td><td>320</td><td>240</td><td>120</td>
+            </tr>
+            <tr>
+                <td>5</td><td>625</td><td>375</td><td>150</td>
+            </tr>
+        </table>
+        <img src="Plot.png" width="400" height="408" class="primary">
+    </body>
+
+</html>
