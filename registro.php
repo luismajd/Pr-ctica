@@ -14,7 +14,7 @@
     </head>
 
     <body>
-        <h1>Formulario: Ingrese sus datos</h1>
+        <h1>Formulario: Por favor, ingrese sus datos</h1>
 
         <hr><br>
 
